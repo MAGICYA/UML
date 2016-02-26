@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><umlet_diagram><help_text>// Uncomment the following line to change the fontsize:
+// fontsize=14
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on UML elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold ⌘ to select multiple elements
+// Use ⌘+mouse to select via lasso
+//
+// Use ± or ⌘+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press ⌘+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text><zoom_level>9</zoom_level><element><type>com.umlet.element.base.Relation</type><coordinates><x>1755</x><y>234</y><w>36</w><h>504</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;495</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>1656</x><y>396</y><w>270</w><h>63</h></coordinates><panel_attributes>-(instancetype)initWithClass:(Class)cls
+--
+[YYClassInfo classInfoWithClass:cls]</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1737</x><y>234</y><w>108</w><h>27</h></coordinates><panel_attributes>_YYModelMeta</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>2214</x><y>234</y><w>108</w><h>27</h></coordinates><panel_attributes>YYClassInfo</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>2232</x><y>234</y><w>36</w><h>504</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;495</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>1989</x><y>468</y><w>612</w><h>126</h></coordinates><panel_attributes>_update
+--
+[[YYClassMethodInfo alloc] initWithMethod:methods[i]]
+
+objc_property_t *properties = class_copyPropertyList(cls,&amp;propertyCount)
+YYClassPropertyInfo *info = [[YYClassPropertyInfo alloc] initWithProperty:properties:properties[i]]
+
+Ivar *ivars = class_copyIvarList(cls,&amp;ivarCount)
+[[YYClassIvarInfo alloc] initWithIvar:ivars[i]]</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>1899</x><y>261</y><w>216</w><h>180</h></coordinates><panel_attributes>lt=&lt;</panel_attributes><additional_attributes>207;27;162;27;162;171;27;171</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>2106</x><y>279</y><w>324</w><h>63</h></coordinates><panel_attributes>classInfoWithClass
+--
+[[YYClassInfo alloc] initWithClass:cls]</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>2655</x><y>225</y><w>171</w><h>27</h></coordinates><panel_attributes>YYClassMethodInfo</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>2961</x><y>225</y><w>36</w><h>504</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;495</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>2889</x><y>279</y><w>180</w><h>54</h></coordinates><panel_attributes>initWithProperty</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>2889</x><y>225</y><w>171</w><h>27</h></coordinates><panel_attributes>YYClassPropertyInfo</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>2727</x><y>225</y><w>36</w><h>504</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;495</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>3132</x><y>225</y><w>171</w><h>27</h></coordinates><panel_attributes>YYClassIvarInfo</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>3186</x><y>225</y><w>36</w><h>522</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;513</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>3105</x><y>279</y><w>216</w><h>63</h></coordinates><panel_attributes>initWithIvar</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>1134</x><y>0</y><w>44</w><h>359</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;342</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>918</x><y>198</y><w>486</w><h>90</h></coordinates><panel_attributes>yy_modelSetWithDictionary
+--
+[_YYModelMeta metaWithClass:object_getClass(self)]
+CFDictionaryApplyFunction (ModelSetWithDictionaryFunction)
+CFArrayApplyFunction (MOdelSetWithPropertyMetaArrayFunction)</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1116</x><y>0</y><w>144</w><h>27</h></coordinates><panel_attributes>NSObject+YYModel</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>864</x><y>360</y><w>603</w><h>45</h></coordinates><panel_attributes>static void ModelSetValueForProperty(id model,id value,_YYModelPropertyMeta *meta)
+--
+bg=pink</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>693</x><y>18</y><w>144</w><h>27</h></coordinates><panel_attributes>NSDictionary+YYModel</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>540</x><y>18</y><w>44</w><h>278</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;261</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>513</x><y>18</y><w>144</w><h>27</h></coordinates><panel_attributes>NSArray+YYModel</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>711</x><y>18</y><w>44</w><h>323</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;306</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1458</x><y>216</y><w>144</w><h>27</h></coordinates><panel_attributes>_YYModelPropertyMeta</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>1503</x><y>216</y><w>44</w><h>422</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>27;27;27;405</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>927</x><y>90</y><w>477</w><h>63</h></coordinates><panel_attributes>yy_modelWithDictionary
+--
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>1656</x><y>297</y><w>261</w><h>54</h></coordinates><panel_attributes>metaWithClass:(Class)cls
+--
+[[__ModelMeta alloc] initWithClass:cls]</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>1602</x><y>306</y><w>63</w><h>144</h></coordinates><panel_attributes>lt=&lt;</panel_attributes><additional_attributes>54;135;27;135;27;27;54;27</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>2106</x><y>369</y><w>324</w><h>63</h></coordinates><panel_attributes>classInfoWithClass
+--
+[self _update]</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>2043</x><y>288</y><w>72</w><h>126</h></coordinates><panel_attributes>lt=&lt;</panel_attributes><additional_attributes>63;117;27;117;27;27;63;27</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>2403</x><y>387</y><w>252</w><h>117</h></coordinates><panel_attributes>lt=&lt;</panel_attributes><additional_attributes>198;108;243;108;243;27;27;27</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>2628</x><y>288</y><w>225</w><h>45</h></coordinates><panel_attributes>initWithMethod:(Method)method
+--
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>1377</x><y>90</y><w>296</w><h>242</h></coordinates><panel_attributes>lt=&lt;</panel_attributes><additional_attributes>279;225;252;225;252;27;27;27</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>846</x><y>72</y><w>98</w><h>161</h></coordinates><panel_attributes>lt=&lt;</panel_attributes><additional_attributes>72;144;27;144;27;27;81;27</additional_attributes></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>864</x><y>504</y><w>603</w><h>126</h></coordinates><panel_attributes>static void ModelSetValueForProperty(id model,id value,_YYModelPropertyMeta *meta)
+--
+bg=pink</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.InteractionFrame</type><coordinates><x>864</x><y>423</y><w>603</w><h>54</h></coordinates><panel_attributes>static void ModelSetValueForProperty(id model,id value,_YYModelPropertyMeta *meta)
+--
+bg=pink</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>801</x><y>342</y><w>80</w><h>197</h></coordinates><panel_attributes>lt=&lt;</panel_attributes><additional_attributes>63;180;27;180;27;27;63;27</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>810</x><y>414</y><w>71</w><h>134</h></coordinates><panel_attributes>lt=&lt;</panel_attributes><additional_attributes>54;117;27;117;27;27;54;27</additional_attributes></element></umlet_diagram>
